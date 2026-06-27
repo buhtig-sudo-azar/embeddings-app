@@ -9,7 +9,7 @@ import { ArrowUpRight, ArrowRight, ExternalLink, Code, BookOpen, Boxes, Wrench, 
 
 const TOKENIZATSIYA_URL = "https://tokenizatsiya-app.vercel.app/";
 const ML_S_NULA_URL = "https://ml-s-nula.vercel.app/";
-const TRANSFORMERS_APP_URL = "https://transformers-app.vercel.app/";
+const TRANSFORMERS_APP_URL = "https://transformers-architecture.vercel.app/";
 
 const RESOURCES: Array<{
   icon: typeof BookOpen;

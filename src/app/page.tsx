@@ -31,7 +31,7 @@ import {
 
 const TOKENIZATSIYA_URL = "https://tokenizatsiya-app.vercel.app/";
 const ML_S_NULA_URL = "https://ml-s-nula.vercel.app/";
-const TRANSFORMERS_APP_URL = "https://transformers-app.vercel.app/";
+const TRANSFORMERS_APP_URL = "https://transformers-architecture.vercel.app/";
 
 function Hero() {
   const { completedCount, totalCount, hydrated, resetAll } = useProgress();
