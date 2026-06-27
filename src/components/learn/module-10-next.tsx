@@ -9,6 +9,7 @@ import { ArrowUpRight, ArrowRight, ExternalLink, Code, BookOpen, Boxes, Wrench, 
 
 const TOKENIZATSIYA_URL = "https://tokenizatsiya-app.vercel.app/";
 const ML_S_NULA_URL = "https://ml-s-nula.vercel.app/";
+const TRANSFORMERS_APP_URL = "https://transformers-app.vercel.app/";
 
 const RESOURCES: Array<{
   icon: typeof BookOpen;
@@ -237,6 +238,40 @@ export function Module10Next() {
           ))}
         </div>
       </SandboxBlock>
+
+      <div className="rounded-lg border-2 border-amber-300 bg-amber-50/50 dark:border-amber-700 dark:bg-amber-950/30 p-5">
+        <div className="flex items-start gap-3 flex-wrap">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-500 text-white">
+            <Layers className="h-6 w-6" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="text-xs uppercase tracking-wide text-amber-700 dark:text-amber-300 font-semibold mb-1">
+              Продолжение серии · следующий курс
+            </div>
+            <h3 className="text-lg font-bold mb-2">
+              «Трансформеры — архитектура целиком»
+            </h3>
+            <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
+              10 модулей о том, как из attention-механизма собирается полная
+              архитектура: Q/K/V проекции, causal и padding маски, feed-forward
+              слои, residual connections, LayerNorm, encoder/decoder семейства,
+              positional encoding (sin/cos, RoPE, ALiBi), сквозной forward
+              pass и что варьируется между BERT, GPT и T5. С живыми
+              песочницами: mask painter, residual stack explorer, RoPE
+              rotation viewer, layer-by-layer forward visualizer.
+            </p>
+            <a href={TRANSFORMERS_APP_URL} target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="bg-amber-600 hover:bg-amber-700 text-white dark:bg-amber-700 dark:hover:bg-amber-600"
+              >
+                <ArrowUpRight className="h-4 w-4 mr-1.5" />
+                Перейти к курсу «Трансформеры»
+              </Button>
+            </a>
+          </div>
+        </div>
+      </div>
 
       <div className="rounded-lg border-2 border-dashed border-red-200 bg-red-50/50 dark:border-red-800/60 dark:bg-red-950/30 p-5 text-center">
         <div className="text-xs uppercase tracking-wide text-red-700 dark:text-red-300 font-semibold mb-2">

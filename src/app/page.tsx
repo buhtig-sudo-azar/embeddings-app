@@ -31,6 +31,7 @@ import {
 
 const TOKENIZATSIYA_URL = "https://tokenizatsiya-app.vercel.app/";
 const ML_S_NULA_URL = "https://ml-s-nula.vercel.app/";
+const TRANSFORMERS_APP_URL = "https://transformers-app.vercel.app/";
 
 function Hero() {
   const { completedCount, totalCount, hydrated, resetAll } = useProgress();
@@ -70,6 +71,20 @@ function Hero() {
               <Sparkles className="h-3 w-3 mr-1" />
               Продолжение: после токенов
             </Badge>
+            <a
+              href={TRANSFORMERS_APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex"
+            >
+              <Badge
+                variant="outline"
+                className="mb-3 ml-2 bg-amber-50 border-amber-300 text-amber-700 hover:bg-amber-100 dark:bg-amber-950/50 dark:border-amber-700 dark:text-amber-300 transition-colors"
+              >
+                <Sparkles className="h-3 w-3 mr-1" />
+                Продолжение: архитектура трансформера →
+              </Badge>
+            </a>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight">
               Как токены становятся смыслом
             </h1>
