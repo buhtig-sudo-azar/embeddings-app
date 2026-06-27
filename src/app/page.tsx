@@ -32,6 +32,9 @@ import {
 const TOKENIZATSIYA_URL = "https://tokenizatsiya-app.vercel.app/";
 const ML_S_NULA_URL = "https://ml-s-nula.vercel.app/";
 const TRANSFORMERS_APP_URL = "https://transformers-architecture.vercel.app/";
+const NN_LEARNING_URL = "https://nn-learning-app.vercel.app/";
+const LLM_APP_URL = "https://llms-app.vercel.app/";
+const ALIGNMENT_URL = "https://alignment-app.vercel.app/";
 
 function Hero() {
   const { completedCount, totalCount, hydrated, resetAll } = useProgress();
@@ -64,22 +67,15 @@ function Hero() {
               <ArrowLeft className="h-3.5 w-3.5" />
               Назад к курсу «Токенизация»
             </a>
-            <Badge
-              variant="outline"
-              className="mb-3 bg-emerald-50 border-emerald-200 text-emerald-700 dark:bg-emerald-950/50 dark:border-emerald-800/60 dark:text-emerald-300"
-            >
-              <Sparkles className="h-3 w-3 mr-1" />
-              Продолжение: после токенов
-            </Badge>
             <a
               href={TRANSFORMERS_APP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex"
+              className="inline-flex mb-3"
             >
               <Badge
                 variant="outline"
-                className="mb-3 ml-2 bg-amber-50 border-amber-300 text-amber-700 hover:bg-amber-100 dark:bg-amber-950/50 dark:border-amber-700 dark:text-amber-300 transition-colors"
+                className="bg-amber-50 border-amber-300 text-amber-700 hover:bg-amber-100 dark:bg-amber-950/50 dark:border-amber-700 dark:text-amber-300 transition-colors"
               >
                 <Sparkles className="h-3 w-3 mr-1" />
                 Продолжение: архитектура трансформера →
@@ -243,24 +239,14 @@ function SiteFooter() {
         <p className="text-xs mt-3 max-w-3xl">
           Все песочницы работают прямо в браузере на чистом React + TypeScript.
           Прогресс сохраняется локально в localStorage — твои ответы и метки
-          не уходят на сервер. Это приложение — продолжение двух курсов:{" "}
-          <a
-            href={TOKENIZATSIYA_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-emerald-700 dark:hover:text-emerald-300"
-          >
-            «Токенизация»
-          </a>{" "}
-          и{" "}
-          <a
-            href={ML_S_NULA_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-emerald-700 dark:hover:text-emerald-300"
-          >
-            «ML с нуля»
-          </a>
+          не уходят на сервер. Это приложение — третий курс в серии из семи:{" "}
+          <a href={ML_S_NULA_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-emerald-700 dark:hover:text-emerald-300">«ML с нуля»</a>
+          {" → "}<a href={TOKENIZATSIYA_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-emerald-700 dark:hover:text-emerald-300">«Токенизация»</a>
+          {" → "}<strong className="text-foreground">«Эмбеддинги и attention»</strong>
+          {" → "}<a href={TRANSFORMERS_APP_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-emerald-700 dark:hover:text-emerald-300">«Трансформеры»</a>
+          {" → "}<a href={NN_LEARNING_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-emerald-700 dark:hover:text-emerald-300">«Как нейросети учатся»</a>
+          {" → "}<a href={LLM_APP_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-emerald-700 dark:hover:text-emerald-300">«Большие языковые модели»</a>
+          {" → "}<a href={ALIGNMENT_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-emerald-700 dark:hover:text-emerald-300">«Адаптация и alignment»</a>
           .
         </p>
 
